@@ -5,7 +5,7 @@ services:
     image: postgres
     restart: always
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - ./db_data:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: postgrespassword
   web:
@@ -17,5 +17,3 @@ services:
       - "8000:8000"
     depends_on:
       - db
-volumes:
-  db_data:
