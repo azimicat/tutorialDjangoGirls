@@ -3,3 +3,7 @@ db_data
 .bash_history
 .node_repl_history
 __pycache__
+.DS_Store
+.cache
+.local
+/memo
