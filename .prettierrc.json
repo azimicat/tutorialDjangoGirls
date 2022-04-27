@@ -1,0 +1,18 @@
+{
+  "semi": false,
+  "overrides": [
+    {
+      "files": "*.main.js",
+      "options": {
+        "semi": false
+      }
+    },
+    {
+      "files": ["*.html"],
+      "options": {
+        "tabWidth": 4,
+        "printWidth": 150
+      }
+    }
+  ]
+}
