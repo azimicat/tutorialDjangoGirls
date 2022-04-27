@@ -20,6 +20,12 @@ $ docker ps
 $ docker-compose exec web bash
 ```
 
+## docker内でrequirements.txtをinstall
+
+```bash
+> pip install -r requirements.txt
+```
+
 ## 起動
 
 ```bash
