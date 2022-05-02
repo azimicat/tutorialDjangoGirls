@@ -34,4 +34,4 @@ $ python3 manage.py runserver 127.0.0.1:8000
 
 ## ログイン画面
 
-`http://localhost:8000/admin`
+`http://127.0.0.1:8000/`
