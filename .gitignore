@@ -1,5 +1,6 @@
 tutorialDjangoGirls/__pycache__
 db_data
+db.sqlite3
 .bash_history
 .node_repl_history
 __pycache__
