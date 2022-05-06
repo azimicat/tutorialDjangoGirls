@@ -1,19 +1,19 @@
 from urllib.request import Request
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
-from .models import Post
-from .forms import PostForm
+from ..modules import Post as Post_sv
+from ..modules import PostForm
 from django.shortcuts import redirect
 
 
 def post_list(request: Request):
-    posts = Post.objects.filter(
+    posts = Post_sv.objects.filter(
         published_date__lte=timezone.now()).order_by('-published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 
 def post_detail(request: Request, pk: int):
-    post = get_object_or_404(Post, pk=pk)
+    post = get_object_or_404(Post_sv, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
 
 
