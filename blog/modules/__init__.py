@@ -1,2 +1,2 @@
-from .models import Post
-from .forms import PostForm
+from .models import BlogEntry
+from .blog_entry_form import BlogEntryForm
