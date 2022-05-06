@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post as Post_sv
+from .models import Post as Post
 
 # Postモデルを登録
-admin.site.register(Post_sv)
+admin.site.register(Post)

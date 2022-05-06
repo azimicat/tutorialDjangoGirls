@@ -1,8 +1,8 @@
 from django import forms
-from .models import Post as Post_sv
+from .models import Post
 
 
 class PostForm(forms.ModelForm):
     class Meta:
-        model = Post_sv
+        model = Post
         fields = ('title', 'text',)
